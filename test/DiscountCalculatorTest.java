@@ -8,14 +8,10 @@ public class DiscountCalculatorTest {
 
     @Test
     public void shouldGiveNoDiscountForValue999() {
-        // Подготовка
         int buySum = 999;
         int expectedSum = 999;
-
-        // Исполнение
         int resultSum = discountCalculator.sumAfterDiscount(buySum);
 
-        // Проверка
         Assertions.assertEquals(expectedSum, resultSum);
     }
 
